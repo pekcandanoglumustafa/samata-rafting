@@ -75,6 +75,7 @@ export default function Navbar() {
               )}
             </div>
             <Link href="/galeri" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.gallery[lang]}</Link>
+            <Link href="/sss" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>SSS</Link>
             <Link href="/hakkimizda" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.about[lang]}</Link>
             <Link href="/iletisim" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.contact[lang]}</Link>
             <Link href="/rezervasyon" style={{background:'#ea580c',color:'#fff',padding:'9px 20px',borderRadius:50,fontWeight:700,fontSize:'0.875rem',marginLeft:4}}>
@@ -101,6 +102,7 @@ export default function Navbar() {
             <Link key={t.href} href={t.href} onClick={()=>setOpen(false)} style={{color:'rgba(255,255,255,0.8)',padding:'10px 16px',fontSize:'0.875rem',fontWeight:500}}>{t.label[lang]}</Link>
           ))}
           <Link href="/galeri" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.gallery[lang]}</Link>
+          <Link href="/sss" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>SSS</Link>
           <Link href="/hakkimizda" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.about[lang]}</Link>
           <Link href="/iletisim" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.contact[lang]}</Link>
           <Link href="/rezervasyon" onClick={()=>setOpen(false)} style={{background:'#ea580c',color:'#fff',padding:'12px 16px',borderRadius:10,fontWeight:700,textAlign:'center',marginTop:8}}>📋 Online Rezervasyon</Link>
