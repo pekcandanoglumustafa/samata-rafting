@@ -77,7 +77,10 @@ export default function Navbar() {
             <Link href="/galeri" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.gallery[lang]}</Link>
             <Link href="/hakkimizda" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.about[lang]}</Link>
             <Link href="/iletisim" style={{color:'rgba(255,255,255,.85)',padding:'8px 14px',fontWeight:600,fontSize:'0.875rem'}}>{navT.contact[lang]}</Link>
-            <a href="https://wa.me/905380848760" target="_blank" rel="noopener noreferrer" style={{background:'#25D366',color:'#fff',padding:'9px 20px',borderRadius:50,fontWeight:700,fontSize:'0.875rem',marginLeft:8}}>
+            <Link href="/rezervasyon" style={{background:'#ea580c',color:'#fff',padding:'9px 20px',borderRadius:50,fontWeight:700,fontSize:'0.875rem',marginLeft:4}}>
+              📋 Rezervasyon
+            </Link>
+            <a href="https://wa.me/905380848760" target="_blank" rel="noopener noreferrer" style={{background:'#25D366',color:'#fff',padding:'9px 20px',borderRadius:50,fontWeight:700,fontSize:'0.875rem',marginLeft:4}}>
               {bookLabel[lang]}
             </a>
           </div>
@@ -100,7 +103,8 @@ export default function Navbar() {
           <Link href="/galeri" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.gallery[lang]}</Link>
           <Link href="/hakkimizda" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.about[lang]}</Link>
           <Link href="/iletisim" onClick={()=>setOpen(false)} style={{color:'#fff',padding:'12px 16px',fontWeight:600}}>{navT.contact[lang]}</Link>
-          <a href="tel:+905380848760" style={{background:'#0d9488',color:'#fff',padding:'12px 16px',borderRadius:10,fontWeight:700,textAlign:'center',marginTop:8}}>📞 Tıkla Ara · Bilgi Al</a>
+          <Link href="/rezervasyon" onClick={()=>setOpen(false)} style={{background:'#ea580c',color:'#fff',padding:'12px 16px',borderRadius:10,fontWeight:700,textAlign:'center',marginTop:8}}>📋 Online Rezervasyon</Link>
+          <a href="tel:+905380848760" style={{background:'#0d9488',color:'#fff',padding:'12px 16px',borderRadius:10,fontWeight:700,textAlign:'center',marginTop:6}}>📞 Tıkla Ara · Bilgi Al</a>
           <a href="https://wa.me/905380848760" target="_blank" rel="noopener noreferrer" style={{background:'#25D366',color:'#fff',padding:'12px 16px',borderRadius:10,fontWeight:700,textAlign:'center',marginTop:6}}>📱 WhatsApp Rezervasyon</a>
         </div>
       )}

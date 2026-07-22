@@ -141,6 +141,7 @@ export default function HomePage() {
           <h2 style={{fontSize:'clamp(2rem,4vw,3.5rem)',fontWeight:900,color:'#fff',letterSpacing:'-1px',marginBottom:20,fontFamily:'Arial Black,Arial,sans-serif'}}>Maceraya Hazır Mısın?</h2>
           <p style={{color:'rgba(255,255,255,0.75)',fontSize:'1.1rem',lineHeight:1.7,marginBottom:40}}>Hemen ara veya WhatsApp'tan rezervasyon yap. Gruplar için özel fiyat!</p>
           <div style={{display:'flex',gap:16,justifyContent:'center',flexWrap:'wrap'}}>
+            <Link href="/rezervasyon" style={{background:'#ea580c',color:'#fff',padding:'16px 32px',borderRadius:50,fontWeight:700,fontSize:'1rem',display:'inline-flex',alignItems:'center',gap:8,boxShadow:'0 8px 28px rgba(234,88,12,0.4)'}}>📋 Online Rezervasyon Yap</Link>
             <a href="tel:+905380848760" style={{background:'#0d9488',color:'#fff',padding:'16px 32px',borderRadius:50,fontWeight:700,fontSize:'1rem'}}>📞 Tıkla Ara · Bilgi Al</a>
             <a href="https://wa.me/905380848760" target="_blank" rel="noopener noreferrer" style={{background:'#25D366',color:'#fff',padding:'16px 32px',borderRadius:50,fontWeight:700,fontSize:'1rem'}}>📱 WhatsApp ile Rezervasyon</a>
           </div>
