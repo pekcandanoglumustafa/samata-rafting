@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 style={{color:'#fff',fontWeight:700,fontSize:'0.875rem',letterSpacing:'1px',textTransform:'uppercase',marginBottom:16}}>Hızlı Bağlantılar</h4>
-            {[['/galeri','Galeri'],['/hakkimizda','Hakkımızda'],['/iletisim','İletişim']].map(([href,label])=>(
+            {[['/galeri','Galeri'],['/hakkimizda','Hakkımızda'],['/iletisim','İletişim'],['/sss','SSS'],['/rezervasyon','Online Rezervasyon']].map(([href,label])=>(
               <Link key={href} href={href} style={{display:'block',color:'rgba(255,255,255,0.55)',fontSize:'0.875rem',marginBottom:8}}>{label}</Link>
             ))}
           </div>

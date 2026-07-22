@@ -250,6 +250,23 @@ _Şamata Rafting Rezervasyon Formu_`
           </form>
         )}
 
+
+        {/* SSS Özeti */}
+        <div style={{ marginTop: 40, background: '#f9fafb', borderRadius: 20, padding: '32px', border: '1px solid #e5e7eb' }}>
+          <h3 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#111827', marginBottom: 20, fontFamily: 'Arial Black,Arial,sans-serif' }}>❓ Sıkça Sorulan Sorular</h3>
+          {[
+            ['Etkinlikler saat kaçta başlıyor?', 'Servisli gruplar genellikle saat 11'e doğru buluşuyor. Kendi aracıyla gelenler istedikleri saatte gelebilir — programı gruplara göre ayarlıyoruz.'],
+            ['Kaç kişi olmam gerekiyor?', 'Kaç kişi olduğunuz hiç önemli değil! Tek kişi de, büyük grup da gelebilir.'],
+            ['Ödeme ne zaman yapılır?', 'Etkinlik günü yerinde nakit veya kart ile ödeme yapılır. Peşinat yok.'],
+            ['Yüzme bilmeyenler katılabilir mi?', 'Evet, can yeleği ve kask verilir. Rehberlerimiz her an yanınızda.'],
+          ].map(([s, c]) => (
+            <div key={s} style={{ marginBottom: 16, paddingBottom: 16, borderBottom: '1px solid #e5e7eb' }}>
+              <div style={{ fontWeight: 700, color: '#111827', marginBottom: 6, fontSize: '0.9rem' }}>{s}</div>
+              <div style={{ color: '#6b7280', fontSize: '0.875rem', lineHeight: 1.6 }}>{c}</div>
+            </div>
+          ))}
+          <a href="/sss" style={{ color: '#0d9488', fontWeight: 700, fontSize: '0.875rem' }}>Tüm soruları gör →</a>
+        </div>
         {/* Alternatif iletişim */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginTop: 28 }}>
           <a href="tel:+905380848760" style={{ background: '#0d9488', color: '#fff', padding: '16px', borderRadius: 14, fontWeight: 700, textAlign: 'center', fontSize: '0.95rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
