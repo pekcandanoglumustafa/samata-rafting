@@ -14,6 +14,7 @@ export default function TourPage({tour}) {
             <p style={{color:'rgba(255,255,255,0.85)',fontSize:'1.1rem',maxWidth:540,lineHeight:1.7,marginBottom:28}}>{tour.desc}</p>
             <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
               <a href="tel:+905380848760" style={{background:'#0d9488',color:'#fff',padding:'13px 28px',borderRadius:50,fontWeight:700,fontSize:'0.95rem',display:'inline-flex',alignItems:'center',gap:8}}>📞 Tıkla Ara · Bilgi Al</a>
+              <Link href={`/rezervasyon?tur=${tour.slug}`} style={{background:'#ea580c',color:'#fff',padding:'13px 28px',borderRadius:50,fontWeight:700,fontSize:'0.95rem',display:'inline-flex',alignItems:'center',gap:8}}>📋 Rezervasyon Yap</Link>
               <a href={`https://wa.me/905380848760?text=${encodeURIComponent(tour.title+' hakkında bilgi almak istiyorum')}`} target="_blank" rel="noopener noreferrer" style={{background:'#25D366',color:'#fff',padding:'13px 28px',borderRadius:50,fontWeight:700,fontSize:'0.95rem'}}>📱 WhatsApp</a>
             </div>
           </div>

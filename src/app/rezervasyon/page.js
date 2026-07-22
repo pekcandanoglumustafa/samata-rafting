@@ -1,7 +1,8 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 
-export default function Rezervasyon() {
+function RezervasyonForm() {
   const [form, setForm] = useState({
     ad: '',
     telefon: '',
@@ -14,6 +15,12 @@ export default function Rezervasyon() {
     notlar: '',
   })
   const [gonderildi, setGonderildi] = useState(false)
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const tur = searchParams.get('tur')
+    if (tur) setForm(f => ({...f, tur}))
+  }, [searchParams])
 
   const turler = [
     { value: 'rafting', label: '🚣 Rafting Turu – 1.200 TL / 20 EUR (yemek dahil)', fiyat: '1.200 TL / 20 EUR' },
@@ -255,4 +262,8 @@ _Şamata Rafting Rezervasyon Formu_`
       </div>
     </>
   )
+}
+
+export default function Rezervasyon() {
+  return <Suspense fallback={null}><RezervasyonForm /></Suspense>
 }
