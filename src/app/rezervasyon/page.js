@@ -255,7 +255,7 @@ _Şamata Rafting Rezervasyon Formu_`
         <div style={{ marginTop: 40, background: '#f9fafb', borderRadius: 20, padding: '32px', border: '1px solid #e5e7eb' }}>
           <h3 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#111827', marginBottom: 20, fontFamily: 'Arial Black,Arial,sans-serif' }}>❓ Sıkça Sorulan Sorular</h3>
           {[
-            ['Etkinlikler saat kaçta başlıyor?', 'Servisli gruplar genellikle saat 11'e doğru buluşuyor. Kendi aracıyla gelenler istedikleri saatte gelebilir — programı gruplara göre ayarlıyoruz.'],
+            ['Etkinlikler saat kaçta başlıyor?', 'Servisli gruplar genellikle saat 11’e doğru buluşuyor. Kendi aracıyla gelenler istedikleri saatte gelebilir — programı gruplara göre ayarlıyoruz.'],
             ['Kaç kişi olmam gerekiyor?', 'Kaç kişi olduğunuz hiç önemli değil! Tek kişi de, büyük grup da gelebilir.'],
             ['Ödeme ne zaman yapılır?', 'Etkinlik günü yerinde nakit veya kart ile ödeme yapılır. Peşinat yok.'],
             ['Yüzme bilmeyenler katılabilir mi?', 'Evet, can yeleği ve kask verilir. Rehberlerimiz her an yanınızda.'],
